@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kontakta Bosse och brödernas Bygg i Göteborg. Ring, mejla eller skicka en offertförfrågan direkt via formuläret.">
+    <title>Kontakt | Bosse och brödernas Bygg</title>
+    <link rel="icon" type="image/svg+xml" href="src/assets/icons8-home.svg">
+    <link rel="stylesheet" href="src/style.css">
+  </head>
+  <body>
+    <header class="header">
+      <a class="home-link" href="index.html">
+        <img src="src/assets/icons8-home.svg" alt="">
+        <span>Bosse och brödernas Bygg</span>
+      </a>
+      <nav class="nav-header" aria-label="Huvudmeny">
+        <ul class="nav-list">
+          <li><a href="index.html">Hem</a></li>
+          <li><a href="tjanster.html">Tjänster</a></li>
+          <li><a href="projekt.html">Projekt</a></li>
+          <li><a href="om-oss.html">Om oss</a></li>
+          <li><a class="active" href="kontakt.html" aria-current="page">Kontakt</a></li>
+        </ul>
+      </nav>
+      <a class="header-report" href="rapport.html">Läs rapporten</a>
+    </header>
+
+    <main>
+      <h1>Kontakta oss</h1>
+      <p class="lead">Ring, mejla eller fyll i formuläret. Vi svarar på alla förfrågningar inom två arbetsdagar.</p>
+
+      <div class="contact-layout">
+        <section class="panel contact-info" aria-labelledby="uppgifter-rubrik">
+          <h2 id="uppgifter-rubrik">Kontaktuppgifter</h2>
+          <address>
+            <p><strong>Bosse och brödernas Bygg AB</strong><br>Byggvägen 1<br>411 03 Göteborg</p>
+            <p>Telefon: <a href="tel:+46701234567">070&#8209;123&nbsp;45&nbsp;67</a></p>
+            <p>E-post: <a href="mailto:info@bossebygg.se">info@bossebygg.se</a></p>
+          </address>
+
+          <h3>Telefontider</h3>
+          <dl class="hours">
+            <dt>Mån-tor</dt>
+            <dd>07.00-16.00</dd>
+            <dt>Fredag</dt>
+            <dd>07.00-15.00</dd>
+            <dt>Lör-sön</dt>
+            <dd>Stängt</dd>
+          </dl>
+
+          <h3>Här arbetar vi</h3>
+          <p>Göteborg med omnejd, bland annat Bollebygd, Borås, Sandared, Fritsla, Skene och Kinna.</p>
+        </section>
+
+        <section class="panel" id="offert" aria-labelledby="offert-rubrik">
+          <h2 id="offert-rubrik">Begär offert</h2>
+          <p class="hint">Fält markerade med <span class="required">*</span> är obligatoriska.</p>
+
+          <form class="form" action="#" method="get">
+            <fieldset>
+              <legend>Dina uppgifter</legend>
+              <div class="form-row">
+                <div class="field">
+                  <label for="namn">Namn <span class="required">*</span></label>
+                  <input type="text" id="namn" name="namn" autocomplete="name" required>
+                </div>
+                <div class="field">
+                  <label for="ort">Ort</label>
+                  <input type="text" id="ort" name="ort" autocomplete="address-level2">
+                </div>
+                <div class="field">
+                  <label for="epost">E-post <span class="required">*</span></label>
+                  <input type="email" id="epost" name="epost" autocomplete="email" required>
+                </div>
+                <div class="field">
+                  <label for="telefon">Telefon</label>
+                  <input type="tel" id="telefon" name="telefon" autocomplete="tel">
+                </div>
+              </div>
+              <fieldset class="choice-group">
+                <legend>Hur vill du bli kontaktad?</legend>
+                <div class="choices">
+                  <label class="choice"><input type="radio" name="kontaktsatt" value="telefon" checked> Telefon</label>
+                  <label class="choice"><input type="radio" name="kontaktsatt" value="epost"> E-post</label>
+                </div>
+              </fieldset>
+            </fieldset>
+
+            <fieldset>
+              <legend>Om ditt projekt</legend>
+              <div class="form-row">
+                <div class="field">
+                  <label for="tjanst">Vilken tjänst gäller det? <span class="required">*</span></label>
+                  <select id="tjanst" name="tjanst" required>
+                    <option value="">Välj tjänst</option>
+                    <option value="kok">Kök</option>
+                    <option value="badrum">Badrum</option>
+                    <option value="nybyggnation">Nybyggnation eller tillbyggnad</option>
+                    <option value="altan">Altan eller trädäck</option>
+                    <option value="annat">Annat</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="start">Önskad start</label>
+                  <input type="date" id="start" name="start">
+                </div>
+              </div>
+
+              <fieldset class="choice-group">
+                <legend>Typ av bostad</legend>
+                <div class="choices">
+                  <label class="choice"><input type="radio" name="bostad" value="villa" checked> Villa</label>
+                  <label class="choice"><input type="radio" name="bostad" value="radhus"> Radhus</label>
+                  <label class="choice"><input type="radio" name="bostad" value="bostadsratt"> Bostadsrätt</label>
+                  <label class="choice"><input type="radio" name="bostad" value="fritidshus"> Fritidshus</label>
+                </div>
+              </fieldset>
+
+              <div class="field">
+                <label for="budget">Ungefärlig budget</label>
+                <select id="budget" name="budget">
+                  <option value="vet-ej">Vet inte än</option>
+                  <option value="under-50">Under 50 000 kr</option>
+                  <option value="50-150">50 000-150 000 kr</option>
+                  <option value="150-300">150 000-300 000 kr</option>
+                  <option value="over-300">Över 300 000 kr</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="beskrivning">Beskriv ditt projekt <span class="required">*</span></label>
+                <textarea id="beskrivning" name="beskrivning" required aria-describedby="beskrivning-tips"></textarea>
+                <p class="hint" id="beskrivning-tips">Till exempel vad du vill göra, ungefärlig storlek i m² och om du har ritningar.</p>
+              </div>
+
+              <fieldset class="choice-group">
+                <legend>Jag vill gärna</legend>
+                <div class="choices">
+                  <label class="choice"><input type="checkbox" name="onskemal[]" value="hembesok"> Boka kostnadsfritt hembesök</label>
+                  <label class="choice"><input type="checkbox" name="onskemal[]" value="rot"> Använda ROT-avdrag</label>
+                  <label class="choice"><input type="checkbox" name="onskemal[]" value="bygglov"> Få hjälp med ritning eller bygglov</label>
+                </div>
+              </fieldset>
+            </fieldset>
+
+            <div class="field">
+              <label class="choice"><input type="checkbox" name="samtycke" required> Jag godkänner att mina uppgifter sparas för att besvara min förfrågan. <span class="required">*</span></label>
+            </div>
+
+            <div class="form-actions">
+              <button class="button" type="submit">Skicka förfrågan</button>
+              <button class="button button-secondary" type="reset">Rensa formuläret</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <a class="home-link-footer" href="index.html"><img src="src/assets/icons8-home-footer.svg" alt="Till startsidan"></a>
+      <p class="footer-text1">&copy; 2026 Student: Elvis Kika</p>
+      <p class="footer-text2">Skapad för webbteknik 1ME321<span class="footer-period">.</span></p>
+    </footer>
+  </body>
+</html>

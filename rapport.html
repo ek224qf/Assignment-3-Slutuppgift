@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <title>Rapport för slutuppgift 3 i Webbteknik 1</title>
+    <style>
+        html {
+            font-size: 16px
+        }
+
+        body {
+            background-color: #FFF;
+            color: #000;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            max-width: 80ch;
+            margin-left: 2ch;
+        }
+
+        header,
+        section {
+            border-bottom: 1px solid #999;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        h2 {
+            margin-bottom: 0.2em;
+        }
+
+        h3 {
+            margin-top: 0.2em;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            font: inherit;
+            font-weight: 700;
+            color: #fff;
+            background-color: #094fc1;
+            border: 2px solid #e70b0f;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #131102;
+            border-color: #09e36b;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Rapport för slutuppgift 3 i Webteknik 1</h1>
+    </header>
+    <main>
+        <section>
+            <h2>1. Syfte och målgrupp</h2>
+            <p>I uppgiften skapades en webbplats för Bosse och brödernas Bygg, ett familjeföretag med fem snickare som arbetar i Göteborg med omnejd. Företaget renoverar kök och badrum, bygger altaner och utför nybyggnation och tillbyggnad.</p>
+            <p>Syfte med webbplatsen är att presentera företagets tjänster och skapa förtroende för företaget. Målet är att besökare ska höra av sig och begära en offert.</p>
+            <p>Målgruppen består av privatpersoner som äger en villa, ett radhus, en bostadsrätt eller ett fritidshus i Göteborg med omnejd. Målgruppen kan delas in i två delgrupper: de som vill renovera kök eller badrum och de som vill bygga nytt, bygga till eller bygga en altan.</p>
+            <h3>Användarnas behov</h3>
+            <ul>
+                <li>Få veta vilka tjänster företaget erbjuder och vad som ingår i dem.</li>
+                <li>Få en uppfattning om vad ett projekt kostar och hur lång tid det tar.</li>
+                <li>Förstå hur arbetet går till och vad som gäller för ROT-avdrag.</li>
+                <li>Kunna bedöma om företaget är seriöst genom tidigare projekt, kundomdömen, behörigheter och garantier.</li>
+                <li>Veta om företaget arbetar i det egna området.</li>
+                <li>Enkelt kunna kontakta företaget och begära en offert.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>2. Kravspecifikation</h2>
+            <h3>Innehåll</h3>
+            <ul>
+                <li>Startsidan ska presentera företaget, de fyra tjänsterna, minst tre skäl att välja företaget och minst ett kundomdöme.</li>
+                <li>Varje tjänst ska ha en egen sida som beskriver vad som ingår, tidsåtgång, pris och ROT-avdrag.</li>
+                <li>Översiktssidan för tjänster ska beskriva arbetsprocessen i steg, förklara ROT-avdraget och besvara minst fyra vanliga frågor.</li>
+                <li>Projektsidan ska visa minst fem genomförda projekt med plats, år, tidsåtgång och kundomdöme.</li>
+                <li>Om oss-sidan ska innehålla företagets historia, alla medarbetare, behörigheter och garantier samt arbetsområde.</li>
+                <li>Kontaktsidan ska innehålla adress, telefonnummer, e-postadress och telefontider.</li>
+            </ul>
+            <h3>Funktion</h3>
+            <ul>
+                <li>Användaren ska kunna nå alla huvudsidor från huvudmenyn på varje sida.</li>
+                <li>Användaren ska kunna se vilken sida som är aktiv, och inom Tjänster kunna byta tjänst utan att gå tillbaka till översikten.</li>
+                <li>Användaren ska kunna gå direkt till offertformuläret från startsidan, projektsidan och varje tjänstesida.</li>
+                <li>Användaren ska kunna skicka en offertförfrågan via ett formulär där obligatoriska fält kontrolleras.</li>
+                <li>Användaren ska kunna ringa eller mejla företaget genom att klicka på telefonnumret eller e-postadressen.</li>
+                <li>Användaren ska kunna använda webbplatsen på mobil, surfplatta och dator.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>3. Beskrivning av arbetet</h2>
+            <!-- Beskriv hur du arbetat med uppgiften. -->
+            <!-- Det är viktigt att du beskriver hur du använt Garretts modell och tar med referenser med sidnummer till boken, för att styrka det du tar upp i din text. Se mer info i rutan om referenser på uppgiftens webbsida. -->
+            <p>Arbetet utgick från Garretts modell med fem plan: strategi, omfång, struktur, skelett och yta. Planen går från det abstrakta till det konkreta, och varje plan är beroende av planet under (Garrett 2011, s. 21-22). Arbetet gjordes därför i den ordningen. Garrett varnar samtidigt för att se besluten på ett plan som slutgiltiga innan nästa plan påbörjas (Garrett 2011, s. 24), så tidigare beslut kunde ändras under arbetets gång.</p>
+            <p>Strategiplanet utgår från två frågor: vad organisationen vill få ut av produkten och vad användarna vill få ut av den (Garrett 2011, s. 36). För Bosse och brödernas Bygg är målet att få in offertförfrågningar, medan användarna behöver information och trygghet innan de tar kontakt. Målgruppen delades in i två delgrupper med gemensamma behov, vilket Garrett (2011, s. 42-43) kallar användarsegmentering.</p>
+            <p>På omfångsplanet omsätts strategin i funktionsspecifikationer och innehållskrav (Garrett 2011, s. 29). Kravspecifikationen delades därför in i Innehåll och Funktion. Behovet av att kunna bedöma företaget ledde till exempel till kraven på projekt med kundomdömen och på behörigheter och garantier. Kraven skrevs konkret och med antal där det gick, eftersom ett krav bör lämna så lite som möjligt öppet för tolkning för att det ska gå att avgöra om det är uppfyllt (Garrett 2011, s. 69, 71).</p>
+            <p>Strukturplanet består av informationsarkitektur och interaktionsdesign (Garrett 2011, s. 30). Innehållet ordnades i en hierarkisk struktur, där underordnade sidor representerar smalare begrepp inom en bredare kategori (Garrett 2011, s. 93). Webbplatsen har fem huvudsidor: Hem, Tjänster, Projekt, Om oss och Kontakt. Under Tjänster finns fyra undersidor, en för varje tjänst. Interaktionsdesign handlar om hur systemet svarar på användaren (Garrett 2011, s. 30), vilket här syns i offertformuläret där obligatoriska fält kontrolleras.</p>
+            <p>Skelettplanet omfattar gränssnittsdesign, navigationsdesign och informationsdesign (Garrett 2011, s. 30). Huvudmenyn är en global navigering med länkar till alla huvudavdelningar, och den lokala menyn under Tjänster ger tillgång till det som ligger nära i strukturen (Garrett 2011, s. 120-121). Markeringen av aktiv sida och brödsmulorna stöder vägvisning, det vill säga att användaren förstår var den är och vart den kan gå (Garrett 2011, s. 127). Knappar till offertformuläret placerades på de sidor där besökaren troligen har bestämt sig.</p>
+            <p>Ytplanet handlar om den sinnliga upplevelsen av den färdiga produkten (Garrett 2011, s. 30). Färg är ett av de mest effektiva sätten att kommunicera ett varumärke (Garrett 2011, s. 145), så bruna och varma toner valdes för att passa ett snickeriföretag. Sidhuvud och sidfot fick bakgrundsbilder av skog och trä. Färgerna definierades som variabler i en gemensam stilmall och samma designelement återkommer på alla sidor, vilket ger den interna konsekvens som Garrett (2011, s. 143-144) beskriver.</p>
+        </section>
+        <section>
+            <h2>4. Bilder</h2>
+            <!-- Beskriv i en punktlista vilka redigeringar du gjort av bilderna i ett bildredigeringsprogram, för att anpassa dem till hur du använder dem på din webbplats. -->
+            <p>Bilderna har redigerats, där följande gjorts:</p>
+            <ul>
+                <li>Originalbilderna beskars med AI-verktyget Canva AI.</li>
+                <li>Utsnitten för picture-elementen gjordes med kommandoradsverktyget sips i macOS, enligt punkterna nedan.</li>
+                <li>Bilden på teamet beskars till två varianter för sidan om nybyggnation: en bred bild på 1264 x 711 pixlar (16:9) och ett tätare utsnitt på 800 x 600 pixlar (4:3).</li>
+                <li>Bildkollaget på badrum beskars till två varianter för sidan om badrum: den övre raden på 1264 x 784 pixlar och det färdiga badrummet på 836 x 468 pixlar.</li>
+                <li>Bildkollaget på altaner beskars till två varianter för sidan om altaner: den breda nedre bilden på 1264 x 584 pixlar och altanen uppe till vänster på 628 x 664 pixlar.</li>
+                <li>Bildkollaget på kök beskars till två varianter för sidan om kök: den övre raden på 1264 x 784 pixlar och det färdiga köket på 836 x 468 pixlar.</li>
+            </ul>
+            <p>Picture-elementet används på sidan Nybyggnation och tillbyggnad för bilden på teamet. På skärmar smalare än 700 pixlar visas ett tätare utsnitt med två snickare, så att personerna syns tydligt. På bredare skärmar visas en bred bild med hela teamet.</p>
+            <p>Picture-elementet används också på sidan Badrumsrenovering för bildkollaget på badrum. På skärmar smalare än 700 pixlar visas bara det färdiga badrummet, eftersom de små delbilderna i kollaget blir svåra att se. På bredare skärmar visas den övre raden i kollaget med arbetet på gång.</p>
+            <p>Picture-elementet används också på sidan Altaner och trädäck för bildkollaget på altaner. På skärmar smalare än 700 pixlar visas en enskild altan i nästan kvadratiskt format, som fyller den smala skärmen bättre. På bredare skärmar visas den breda bilden med hela altanen och trädgården.</p>
+            <p>Picture-elementet används också på sidan Köksrenovering för bildkollaget på kök. På skärmar smalare än 700 pixlar visas bara det färdiga köket, eftersom de små delbilderna i kollaget blir svåra att se. På bredare skärmar visas den övre raden i kollaget med arbetet på gång.</p>
+        </section>
+        <section>
+            <h2>5. Utvärdering mot kravspecifikationen</h2>
+            <h3>Innehåll</h3>
+            <ul>
+                <li>Startsidan ska presentera företaget, de fyra tjänsterna, minst tre skäl att välja företaget och minst ett kundomdöme.<br><strong>Uppfyllt:</strong> Startsidan har en presentation, fyra tjänstekort, fyra skäl och ett kundomdöme.</li>
+                <li>Varje tjänst ska ha en egen sida som beskriver vad som ingår, tidsåtgång, pris och ROT-avdrag.<br><strong>Uppfyllt:</strong> Alla fyra tjänster har en egen sida med dessa uppgifter.</li>
+                <li>Översiktssidan för tjänster ska beskriva arbetsprocessen i steg, förklara ROT-avdraget och besvara minst fyra vanliga frågor.<br><strong>Uppfyllt:</strong> Sidan beskriver processen i fem steg, har ett avsnitt om ROT-avdrag och besvarar fyra vanliga frågor.</li>
+                <li>Projektsidan ska visa minst fem genomförda projekt med plats, år, tidsåtgång och kundomdöme.<br><strong>Uppfyllt:</strong> Sidan visar fem projekt som alla har dessa uppgifter.</li>
+                <li>Om oss-sidan ska innehålla företagets historia, alla medarbetare, behörigheter och garantier samt arbetsområde.<br><strong>Uppfyllt:</strong> Sidan berättar om starten 2004, presenterar alla fem medarbetare och har avsnitt om trygghet och arbetsområde.</li>
+                <li>Kontaktsidan ska innehålla adress, telefonnummer, e-postadress och telefontider.<br><strong>Uppfyllt:</strong> Alla uppgifter finns samlade under rubriken Kontaktuppgifter.</li>
+            </ul>
+            <h3>Funktion</h3>
+            <ul>
+                <li>Användaren ska kunna nå alla huvudsidor från huvudmenyn på varje sida.<br><strong>Uppfyllt:</strong> Samma huvudmeny med fem länkar finns på alla nio sidor.</li>
+                <li>Användaren ska kunna se vilken sida som är aktiv, och inom Tjänster kunna byta tjänst utan att gå tillbaka till översikten.<br><strong>Uppfyllt:</strong> Aktiv sida markeras i menyn, och sidorna under Tjänster har brödsmulor och en lokal meny.</li>
+                <li>Användaren ska kunna gå direkt till offertformuläret från startsidan, projektsidan och varje tjänstesida.<br><strong>Uppfyllt:</strong> Alla dessa sidor har en knapp som länkar direkt till formuläret.</li>
+                <li>Användaren ska kunna skicka en offertförfrågan via ett formulär där obligatoriska fält kontrolleras.<br><strong>Delvis uppfyllt:</strong> Webbläsaren kontrollerar de fem obligatoriska fälten, men formuläret är inte kopplat till en server och uppgifterna når därför inte företaget.</li>
+                <li>Användaren ska kunna ringa eller mejla företaget genom att klicka på telefonnumret eller e-postadressen.<br><strong>Uppfyllt:</strong> Kontaktsidan använder länkar med tel: och mailto:.</li>
+                <li>Användaren ska kunna använda webbplatsen på mobil, surfplatta och dator.<br><strong>Uppfyllt:</strong> Layouten är byggd för mobil först och anpassas med mediefrågor för större skärmar.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>6. Användartest</h2>
+            <h3>- med metoden "Tänka högt" (Thinking Out Loud)</h3>
+            <p>Den första testpersonen var en kompis, William, som fick testa webbplatsen i rollen som en användare utan teknisk kunskap och tänkte högt under tiden. Scenariot var att hitta ett byggföretag för att renovera sin bostadsrätt. Testet visade en brist gällande priser och recensioner: Williams ifrågasatte om priserna var undersökta eller påhittade, och samma fråga gällde recensionerna. Williams fick då en förklaring om att webbplatsen är en prototyp med begränsad funktionalitet.</p>
+            <p>Även Pamela testade webbplatsen och var något kritisk till hur priset beräknades, till exempel utifrån val av material eller val av byggnation.</p>
+            <p>Elham testade också webbplatsen och ville se fler exempel med bilder före och efter renovering.</p>
+            <p>Inga ändringar gjordes på webbplatsen efter testerna, eftersom den är en prototyp.</p>
+        </section>
+        <section>
+            <h2>Källförteckning</h2>
+            <!-- Skriv en källförteckning enligt Harvardsystemet för de källor du refererat till i din text. Det ska åtminstone vara Garretts bok. -->
+            <p>Garrett, J. J. (2011). <cite>The elements of user experience: user-centered design for the web and beyond</cite>. 2 uppl., New Riders.</p>
+                    <p><button class="button" type="button" onclick="location.href='index.html'">Tillbaka till webbplatsen</button></p>
+
+        </section>
+    </main>
+</body>
+
+</html>
